@@ -1,0 +1,51 @@
+# Nmap 7.70 scan initiated Wed Feb 20 18:25:15 2019 as: nmap -T4 -p80,110,143,993,995,10000 -A -O -o nmap_scan 10.10.10.120
+Nmap scan report for 10.10.10.120
+Host is up (0.19s latency).
+
+PORT      STATE SERVICE  VERSION
+80/tcp    open  http     Apache httpd 2.4.34 ((Ubuntu))
+|_http-server-header: Apache/2.4.34 (Ubuntu)
+|_http-title: Site doesn't have a title (text/html).
+110/tcp   open  pop3     Dovecot pop3d
+|_pop3-capabilities: SASL UIDL AUTH-RESP-CODE STLS PIPELINING RESP-CODES TOP CAPA
+| ssl-cert: Subject: commonName=chaos
+| Subject Alternative Name: DNS:chaos
+| Not valid before: 2018-10-28T10:01:49
+|_Not valid after:  2028-10-25T10:01:49
+|_ssl-date: TLS randomness does not represent time
+143/tcp   open  imap     Dovecot imapd (Ubuntu)
+|_imap-capabilities: Pre-login LITERAL+ STARTTLS more ENABLE have post-login IDLE OK LOGIN-REFERRALS SASL-IR listed ID capabilities LOGINDISABLEDA0001 IMAP4rev1
+| ssl-cert: Subject: commonName=chaos
+| Subject Alternative Name: DNS:chaos
+| Not valid before: 2018-10-28T10:01:49
+|_Not valid after:  2028-10-25T10:01:49
+|_ssl-date: TLS randomness does not represent time
+993/tcp   open  ssl/imap Dovecot imapd (Ubuntu)
+|_imap-capabilities: Pre-login LITERAL+ more ENABLE have post-login IDLE OK LOGIN-REFERRALS SASL-IR listed ID AUTH=PLAINA0001 capabilities IMAP4rev1
+| ssl-cert: Subject: commonName=chaos
+| Subject Alternative Name: DNS:chaos
+| Not valid before: 2018-10-28T10:01:49
+|_Not valid after:  2028-10-25T10:01:49
+|_ssl-date: TLS randomness does not represent time
+995/tcp   open  ssl/pop3 Dovecot pop3d
+|_pop3-capabilities: SASL(PLAIN) UIDL AUTH-RESP-CODE USER PIPELINING RESP-CODES TOP CAPA
+| ssl-cert: Subject: commonName=chaos
+| Subject Alternative Name: DNS:chaos
+| Not valid before: 2018-10-28T10:01:49
+|_Not valid after:  2028-10-25T10:01:49
+|_ssl-date: TLS randomness does not represent time
+10000/tcp open  http     MiniServ 1.890 (Webmin httpd)
+|_http-title: Site doesn't have a title (text/html; Charset=iso-8859-1).
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 3.2 - 4.9 (95%), Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (94%), Linux 3.16 (93%), Linux 3.18 (93%), ASUS RT-N56U WAP (Linux 3.4) (93%), Oracle VM Server 3.4.2 (Linux 4.1) (93%), Android 4.1.1 (93%), Android 4.2.2 (Linux 3.4) (93%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 110/tcp)
+HOP RTT       ADDRESS
+1   207.30 ms 10.10.16.1
+2   207.57 ms 10.10.10.120
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Feb 20 18:26:07 2019 -- 1 IP address (1 host up) scanned in 52.32 seconds

