@@ -1,0 +1,6 @@
+The vulnerablity lies in moodle. There is a file called 5.png in images
+and that file isn't a image. After getting last character of password
+we did brute force scan and got entery as giovanni. After that a moodle 
+exploit called evil teacher.https://blog.ripstech.com/2018/moodle-remote-code-execution/
+We then get reverse shell and enumerating sql db we get passwd for giovanni
+and then we exploit backup.sh script. Backup.sh vulnerable last line. Symlink to /etc/shadow and edit the file
