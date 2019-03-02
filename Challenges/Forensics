@@ -1,6 +1,0 @@
-1.usb.transfer_type == 0x1 and frame.len==35 and !usb.capdata == 00:00:00:00:00:00:00:00
-We have used usb.transfer_type==0x1 as our motive is here only to find the keystrokes.
-Use this type of filter where fram.len is always the size of usb.interupt and usb.capdata is the last 8 bytes in usr interrupt 
-packet. The key lies in the fact that the last 8 bytes of usb.capdata contains a hex number which represents a ascii number.
-So we have to now write a script to to get that hex and convert it to ascii.
-USB_Keyboard:https://bitvijays.github.io/LFC-Forensics.html
