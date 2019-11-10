@@ -1,4 +1,4 @@
-                                                                  USER
+                                                           USER
                                                                   
                                                                   
 Perform a nmap scan to get the domain we need to use I.e docker.registry.htb 
@@ -11,7 +11,7 @@ http://docker.registry.htb/v2/ and see how to extract all blobs .
  
  
  
-                                                                  ROOT  
+                                                           ROOT  
                                                                   
                                                                   
 Visit /bolt/bolt to get login page and crack the bcrypt hash to login as admin:strawberry 
