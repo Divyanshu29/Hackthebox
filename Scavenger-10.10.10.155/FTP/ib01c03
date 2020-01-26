@@ -1,0 +1,34 @@
+From support@ib01.supersechosting.htb Mon Dec 10 21:10:56 2018
+Return-path: <support@ib01.supersechosting.htb>
+Envelope-to: ib01c03@ib01.supersechosting.htb
+Delivery-date: Mon, 10 Dec 2018 21:10:56 +0100
+Received: from support by ib01.supersechosting.htb with local (Exim 4.89)
+	(envelope-from <support@ib01.supersechosting.htb>)
+	id 1gWRtI-0000ZK-8Q
+	for ib01c03@ib01.supersechosting.htb; Mon, 10 Dec 2018 21:10:56 +0100
+To: <ib01c03@ib01.supersechosting.htb>
+Subject: Re: Please help! Site Defaced!
+In-Reply-To: Your message of Mon, 10 Dec 2018 21:04:49 +0100
+	<E1gWRnN-0000XA-44@ib01.supersechosting.htb>
+References: <E1gWRnN-0000XA-44@ib01.supersechosting.htb>
+X-Mailer: mail (GNU Mailutils 3.1.1)
+Message-Id: <E1gWRtI-0000ZK-8Q@ib01.supersechosting.htb>
+From: support <support@ib01.supersechosting.htb>
+Date: Mon, 10 Dec 2018 21:10:56 +0100
+X-IMAPbase: 1544472964 2
+Status: O
+X-UID: 1
+
+>> Please we need your help. Our site has been defaced!
+>> What we should do now?
+>>
+>> rentahacker.htb
+
+Hi, we will check when possible. We are working on another incident right now. We just make a backup of the apache logs.
+Please check if there is any strange file in your web root and upload it to the ftp server:
+ftp.supersechosting.htb
+user: ib01ftp
+pass: YhgRt56_Ta
+
+Thanks.
+

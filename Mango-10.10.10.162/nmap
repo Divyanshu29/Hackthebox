@@ -1,0 +1,81 @@
+# Nmap 7.80 scan initiated Wed Dec 18 07:04:02 2019 as: nmap -o nmap -p 22,80,443 -A 10.10.10.162
+Nmap scan report for mango.htb (10.10.10.162)
+Host is up (0.24s latency).
+
+PORT    STATE SERVICE  VERSION
+22/tcp  open  ssh      OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 a8:8f:d9:6f:a6:e4:ee:56:e3:ef:54:54:6d:56:0c:f5 (RSA)
+|   256 6a:1c:ba:89:1e:b0:57:2f:fe:63:e1:61:72:89:b4:cf (ECDSA)
+|_  256 90:70:fb:6f:38:ae:dc:3b:0b:31:68:64:b0:4e:7d:c9 (ED25519)
+80/tcp  open  http     Apache httpd 2.4.29 ((Ubuntu))
+|_http-title: 403 Forbidden
+| vulners: 
+|   Apache httpd 2.4.29: 
+|     	HTTPD:4F2F0BB7D65398ADC26E0CA49440E49E	7.8	https://vulners.com/httpd/HTTPD:4F2F0BB7D65398ADC26E0CA49440E49E
+|     	HTTPD:FC354B921BA807DFCACD7CD3C1D02FF9	7.2	https://vulners.com/httpd/HTTPD:FC354B921BA807DFCACD7CD3C1D02FF9
+|     	HTTPD:9CDB89FBD1162B1E462FDF5BEA375759	6.8	https://vulners.com/httpd/HTTPD:9CDB89FBD1162B1E462FDF5BEA375759
+|     	HTTPD:13B5FCC9676077F8FD08063C83511140	6.8	https://vulners.com/httpd/HTTPD:13B5FCC9676077F8FD08063C83511140
+|     	HTTPD:531CF2A74E1A5A02A1D6AE2505AD586F	6.4	https://vulners.com/httpd/HTTPD:531CF2A74E1A5A02A1D6AE2505AD586F
+|     	HTTPD:1696C4DDCBC58CE20005FCB002958C09	6.0	https://vulners.com/httpd/HTTPD:1696C4DDCBC58CE20005FCB002958C09
+|     	HTTPD:01BB9C701A4D4302EF59FA7EA89D9115	5.8	https://vulners.com/httpd/HTTPD:01BB9C701A4D4302EF59FA7EA89D9115
+|     	HTTPD:E05CACB9D575871BA1E3088D02930266	5.0	https://vulners.com/httpd/HTTPD:E05CACB9D575871BA1E3088D02930266
+|     	HTTPD:D5091608B1DC5DB5CABE405261B7658E	5.0	https://vulners.com/httpd/HTTPD:D5091608B1DC5DB5CABE405261B7658E
+|     	HTTPD:D26626D944F16D90B877FB157E4A128F	5.0	https://vulners.com/httpd/HTTPD:D26626D944F16D90B877FB157E4A128F
+|     	HTTPD:C191D6FAD0C97D0A2E0A2A9F7BFE6B38	5.0	https://vulners.com/httpd/HTTPD:C191D6FAD0C97D0A2E0A2A9F7BFE6B38
+|     	HTTPD:B2B68FFCE0FB45D09BE91EE9ECBA07F6	5.0	https://vulners.com/httpd/HTTPD:B2B68FFCE0FB45D09BE91EE9ECBA07F6
+|     	HTTPD:4EC9662496A151DDE6D030D9127572E7	5.0	https://vulners.com/httpd/HTTPD:4EC9662496A151DDE6D030D9127572E7
+|     	HTTPD:05BD936FA758F49B425B80570054B8D4	5.0	https://vulners.com/httpd/HTTPD:05BD936FA758F49B425B80570054B8D4
+|     	HTTPD:04C30566E99EFB3C0D60F08EE2524591	5.0	https://vulners.com/httpd/HTTPD:04C30566E99EFB3C0D60F08EE2524591
+|     	HTTPD:D26FFC4C8AA598C5F130A0223836644E	4.3	https://vulners.com/httpd/HTTPD:D26FFC4C8AA598C5F130A0223836644E
+|     	HTTPD:A5773ECB3CB67826707B252F21BB80BB	4.3	https://vulners.com/httpd/HTTPD:A5773ECB3CB67826707B252F21BB80BB
+|     	HTTPD:86C509FC37A85DC3C01E3CE10402C6DC	4.3	https://vulners.com/httpd/HTTPD:86C509FC37A85DC3C01E3CE10402C6DC
+|     	HTTPD:43E63F90DCA6F418ACF2327C4F88C3D8	4.3	https://vulners.com/httpd/HTTPD:43E63F90DCA6F418ACF2327C4F88C3D8
+|     	HTTPD:2E568217BC35E0AA91DF49E7CE65CA67	3.5	https://vulners.com/httpd/HTTPD:2E568217BC35E0AA91DF49E7CE65CA67
+|     	HTTPD:B6CF5630624F83951A477D36DC8FD634	0.0	https://vulners.com/httpd/HTTPD:B6CF5630624F83951A477D36DC8FD634
+|     	HTTPD:94C27BCF50CA81A222019B9F06735AA1	0.0	https://vulners.com/httpd/HTTPD:94C27BCF50CA81A222019B9F06735AA1
+|     	HTTPD:914D0BB6DF64CDA58BDF1461563DCBC2	0.0	https://vulners.com/httpd/HTTPD:914D0BB6DF64CDA58BDF1461563DCBC2
+|     	HTTPD:7ED2E94FC8175AF57B0B84C966E78986	0.0	https://vulners.com/httpd/HTTPD:7ED2E94FC8175AF57B0B84C966E78986
+|     	HTTPD:55F8C86BB4FE80544B301C6F772E1F21	0.0	https://vulners.com/httpd/HTTPD:55F8C86BB4FE80544B301C6F772E1F21
+|     	HTTPD:53F7D531D201D0209EE31F3FA8829F5B	0.0	https://vulners.com/httpd/HTTPD:53F7D531D201D0209EE31F3FA8829F5B
+|_    	HTTPD:21A860C56B7B6A55960FB17E72B7E4B4	0.0	https://vulners.com/httpd/HTTPD:21A860C56B7B6A55960FB17E72B7E4B4
+443/tcp open  ssl/http Apache httpd 2.4.29 ((Ubuntu))
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: 400 Bad Request
+| ssl-cert: Subject: commonName=staging-order.mango.htb/organizationName=Mango Prv Ltd./stateOrProvinceName=None/countryName=IN
+| Not valid before: 2019-09-27T14:21:19
+|_Not valid after:  2020-09-26T14:21:19
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  http/1.1
+| vulners: 
+|   cpe:/a:apache:http_server:2.4.29: 
+|     	CVE-2019-0211	7.2	https://vulners.com/cve/CVE-2019-0211
+|     	CVE-2018-1312	6.8	https://vulners.com/cve/CVE-2018-1312
+|     	CVE-2017-15715	6.8	https://vulners.com/cve/CVE-2017-15715
+|     	CVE-2019-10082	6.4	https://vulners.com/cve/CVE-2019-10082
+|     	CVE-2019-0217	6.0	https://vulners.com/cve/CVE-2019-0217
+|     	CVE-2019-10098	5.8	https://vulners.com/cve/CVE-2019-10098
+|     	CVE-2019-10081	5.0	https://vulners.com/cve/CVE-2019-10081
+|     	CVE-2019-0220	5.0	https://vulners.com/cve/CVE-2019-0220
+|     	CVE-2019-0196	5.0	https://vulners.com/cve/CVE-2019-0196
+|     	CVE-2018-17199	5.0	https://vulners.com/cve/CVE-2018-17199
+|     	CVE-2018-1333	5.0	https://vulners.com/cve/CVE-2018-1333
+|     	CVE-2017-15710	5.0	https://vulners.com/cve/CVE-2017-15710
+|     	CVE-2019-0197	4.9	https://vulners.com/cve/CVE-2019-0197
+|     	CVE-2019-10092	4.3	https://vulners.com/cve/CVE-2019-10092
+|     	CVE-2018-11763	4.3	https://vulners.com/cve/CVE-2018-11763
+|_    	CVE-2018-1283	3.5	https://vulners.com/cve/CVE-2018-1283
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 3.2 - 4.9 (95%), Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (94%), Linux 3.16 (93%), Linux 3.18 (93%), ASUS RT-N56U WAP (Linux 3.4) (93%), Oracle VM Server 3.4.2 (Linux 4.1) (93%), Android 4.1.1 (93%), Adtran 424RG FTTH gateway (92%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   261.54 ms 10.10.14.1
+2   261.54 ms mango.htb (10.10.10.162)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Dec 18 07:04:41 2019 -- 1 IP address (1 host up) scanned in 39.44 seconds

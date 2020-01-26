@@ -1,0 +1,5 @@
+curl -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNTY1NTYwNjgzLCJleHAiOjE1NjU2NDcwODN9.ZZR8sCrDQnWn6r-CC3fh-V-wpPCqM0JZOz7IpumKly8' http://luke.io:3000/users/
+
+curl --header "Content-Type:application/json" --request POST --data '{"password":"Zk6heYCyv6ZE9Xcg","username":"yuri"}' http://luke.io:3000/login
+
+For /management go for username in Caps

@@ -1,0 +1,78 @@
+# Nmap 7.80 scan initiated Thu Dec 19 10:34:07 2019 as: nmap -p21,22,25,43,53,80 -A -O -o nmap 10.10.10.155
+Nmap scan report for 10.10.10.155
+Host is up (0.19s latency).
+
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.3
+22/tcp open  ssh     OpenSSH 7.4p1 Debian 10+deb9u4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 df:94:47:03:09:ed:8c:f7:b6:91:c5:08:b5:20:e5:bc (RSA)
+|   256 e3:05:c1:c5:d1:9c:3f:91:0f:c0:35:4b:44:7f:21:9e (ECDSA)
+|_  256 45:92:c0:a1:d9:5d:20:d6:eb:49:db:12:a5:70:b7:31 (ED25519)
+25/tcp open  smtp    Exim smtpd 4.89
+| smtp-commands: ib01.supersechosting.htb Hello nmap.scanme.org [10.10.14.7], SIZE 52428800, 8BITMIME, PIPELINING, PRDR, HELP, 
+|_ Commands supported: AUTH HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP 
+43/tcp open  whois?
+| fingerprint-strings: 
+|   GenericLines, GetRequest, HTTPOptions, Help, RTSPRequest: 
+|     % SUPERSECHOSTING WHOIS server v0.6beta@MariaDB10.1.37
+|     more information on SUPERSECHOSTING, visit http://www.supersechosting.htb
+|     This query returned 0 object
+|   SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|     % SUPERSECHOSTING WHOIS server v0.6beta@MariaDB10.1.37
+|     more information on SUPERSECHOSTING, visit http://www.supersechosting.htb
+|_    1267 (HY000): Illegal mix of collations (utf8mb4_general_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation 'like'
+53/tcp open  domain  ISC BIND 9.10.3-P4 (Debian Linux)
+| dns-nsid: 
+|_  bind.version: 9.10.3-P4-Debian
+80/tcp open  http    Apache httpd 2.4.25 ((Debian))
+|_http-server-header: Apache/2.4.25 (Debian)
+|_http-title: Site doesn't have a title (text/html).
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port43-TCP:V=7.80%I=7%D=12/19%Time=5DFB19E9%P=x86_64-pc-linux-gnu%r(Gen
+SF:ericLines,A9,"%\x20SUPERSECHOSTING\x20WHOIS\x20server\x20v0\.6beta@Mari
+SF:aDB10\.1\.37\r\n%\x20for\x20more\x20information\x20on\x20SUPERSECHOSTIN
+SF:G,\x20visit\x20http://www\.supersechosting\.htb\r\n%\x20This\x20query\x
+SF:20returned\x200\x20object\r\n")%r(GetRequest,A9,"%\x20SUPERSECHOSTING\x
+SF:20WHOIS\x20server\x20v0\.6beta@MariaDB10\.1\.37\r\n%\x20for\x20more\x20
+SF:information\x20on\x20SUPERSECHOSTING,\x20visit\x20http://www\.supersech
+SF:osting\.htb\r\n%\x20This\x20query\x20returned\x200\x20object\r\n")%r(HT
+SF:TPOptions,A9,"%\x20SUPERSECHOSTING\x20WHOIS\x20server\x20v0\.6beta@Mari
+SF:aDB10\.1\.37\r\n%\x20for\x20more\x20information\x20on\x20SUPERSECHOSTIN
+SF:G,\x20visit\x20http://www\.supersechosting\.htb\r\n%\x20This\x20query\x
+SF:20returned\x200\x20object\r\n")%r(RTSPRequest,A9,"%\x20SUPERSECHOSTING\
+SF:x20WHOIS\x20server\x20v0\.6beta@MariaDB10\.1\.37\r\n%\x20for\x20more\x2
+SF:0information\x20on\x20SUPERSECHOSTING,\x20visit\x20http://www\.supersec
+SF:hosting\.htb\r\n%\x20This\x20query\x20returned\x200\x20object\r\n")%r(H
+SF:elp,A9,"%\x20SUPERSECHOSTING\x20WHOIS\x20server\x20v0\.6beta@MariaDB10\
+SF:.1\.37\r\n%\x20for\x20more\x20information\x20on\x20SUPERSECHOSTING,\x20
+SF:visit\x20http://www\.supersechosting\.htb\r\n%\x20This\x20query\x20retu
+SF:rned\x200\x20object\r\n")%r(SSLSessionReq,103,"%\x20SUPERSECHOSTING\x20
+SF:WHOIS\x20server\x20v0\.6beta@MariaDB10\.1\.37\r\n%\x20for\x20more\x20in
+SF:formation\x20on\x20SUPERSECHOSTING,\x20visit\x20http://www\.supersechos
+SF:ting\.htb\r\n1267\x20\(HY000\):\x20Illegal\x20mix\x20of\x20collations\x
+SF:20\(utf8mb4_general_ci,IMPLICIT\)\x20and\x20\(utf8_general_ci,COERCIBLE
+SF:\)\x20for\x20operation\x20'like'")%r(TerminalServerCookie,103,"%\x20SUP
+SF:ERSECHOSTING\x20WHOIS\x20server\x20v0\.6beta@MariaDB10\.1\.37\r\n%\x20f
+SF:or\x20more\x20information\x20on\x20SUPERSECHOSTING,\x20visit\x20http://
+SF:www\.supersechosting\.htb\r\n1267\x20\(HY000\):\x20Illegal\x20mix\x20of
+SF:\x20collations\x20\(utf8mb4_general_ci,IMPLICIT\)\x20and\x20\(utf8_gene
+SF:ral_ci,COERCIBLE\)\x20for\x20operation\x20'like'")%r(TLSSessionReq,103,
+SF:"%\x20SUPERSECHOSTING\x20WHOIS\x20server\x20v0\.6beta@MariaDB10\.1\.37\
+SF:r\n%\x20for\x20more\x20information\x20on\x20SUPERSECHOSTING,\x20visit\x
+SF:20http://www\.supersechosting\.htb\r\n1267\x20\(HY000\):\x20Illegal\x20
+SF:mix\x20of\x20collations\x20\(utf8mb4_general_ci,IMPLICIT\)\x20and\x20\(
+SF:utf8_general_ci,COERCIBLE\)\x20for\x20operation\x20'like'");
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 3.10 - 4.11 (94%), Linux 3.13 (94%), Linux 3.13 or 4.2 (94%), Linux 3.2 - 4.9 (94%), Linux 4.2 (94%), Linux 4.4 (94%), Linux 4.8 (94%), Linux 4.9 (94%), Linux 3.16 (93%), Linux 3.12 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: Host: ib01.supersechosting.htb; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 25/tcp)
+HOP RTT       ADDRESS
+1   185.36 ms 10.10.14.1
+2   185.26 ms 10.10.10.155
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Dec 19 10:36:01 2019 -- 1 IP address (1 host up) scanned in 114.65 seconds

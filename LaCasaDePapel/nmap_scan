@@ -1,0 +1,85 @@
+# Nmap 7.70 scan initiated Sun Apr 28 10:16:16 2019 as: nmap -sC -sV -p 21,22,80,6200 -A -O -o nmap_scan 10.10.10.131
+Nmap scan report for 10.10.10.131
+Host is up (0.56s latency).
+
+PORT     STATE SERVICE VERSION
+21/tcp   open  ftp     vsftpd 2.3.4
+22/tcp   open  ssh     OpenSSH 7.9 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 03:e1:c2:c9:79:1c:a6:6b:51:34:8d:7a:c3:c7:c8:50 (RSA)
+|   256 41:e4:95:a3:39:0b:25:f9:da:de:be:6a:dc:59:48:6d (ECDSA)
+|_  256 30:0b:c6:66:2b:8f:5e:4f:26:28:75:0e:f5:b1:71:e4 (ED25519)
+80/tcp   open  http    Node.js (Express middleware)
+|_http-title: La Casa De Papel
+6200/tcp open  lm-x?
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, NULL, RPCCheck: 
+|     [34mPsy Shell v0.9.9 (PHP 7.2.10 
+|     cli) by Justin Hileman
+|     [39m
+|   GetRequest: 
+|     [34mPsy Shell v0.9.9 (PHP 7.2.10 
+|     cli) by Justin Hileman
+|     [39m
+|     [30;43mPHP Warning: Use of undefined constant GET - assumed 'GET' (this will throw an Error in a future version of PHP) in phar://eval()'d code on line 1
+|     [39;49m
+|   HTTPOptions, RTSPRequest: 
+|     [34mPsy Shell v0.9.9 (PHP 7.2.10 
+|     cli) by Justin Hileman
+|     [39m
+|     [30;43mPHP Warning: Use of undefined constant OPTIONS - assumed 'OPTIONS' (this will throw an Error in a future version of PHP) in phar://eval()'d code on line 1
+|     [39;49m
+|   Help: 
+|     [34mPsy Shell v0.9.9 (PHP 7.2.10 
+|     cli) by Justin Hileman
+|     [39m
+|     [30;43mPHP Warning: Use of undefined constant HELP - assumed 'HELP' (this will throw an Error in a future version of PHP) in phar://eval()'d code on line 1
+|_    [39;49m
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port6200-TCP:V=7.70%I=7%D=4/28%Time=5CC53020%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,42,"\x1b\[34mPsy\x20Shell\x20v0\.9\.9\x20\(PHP\x207\.2\.10\x20\xe2\x
+SF:80\x94\x20cli\)\x20by\x20Justin\x20Hileman\x1b\[39m\n")%r(GenericLines,
+SF:42,"\x1b\[34mPsy\x20Shell\x20v0\.9\.9\x20\(PHP\x207\.2\.10\x20\xe2\x80\
+SF:x94\x20cli\)\x20by\x20Justin\x20Hileman\x1b\[39m\n")%r(GetRequest,E6,"\
+SF:x1b\[34mPsy\x20Shell\x20v0\.9\.9\x20\(PHP\x207\.2\.10\x20\xe2\x80\x94\x
+SF:20cli\)\x20by\x20Justin\x20Hileman\x1b\[39m\n\x1b\[30;43mPHP\x20Warning
+SF::\x20\x20Use\x20of\x20undefined\x20constant\x20GET\x20-\x20assumed\x20'
+SF:GET'\x20\(this\x20will\x20throw\x20an\x20Error\x20in\x20a\x20future\x20
+SF:version\x20of\x20PHP\)\x20in\x20phar://eval\(\)'d\x20code\x20on\x20line
+SF:\x201\x1b\[39;49m\n")%r(HTTPOptions,EE,"\x1b\[34mPsy\x20Shell\x20v0\.9\
+SF:.9\x20\(PHP\x207\.2\.10\x20\xe2\x80\x94\x20cli\)\x20by\x20Justin\x20Hil
+SF:eman\x1b\[39m\n\x1b\[30;43mPHP\x20Warning:\x20\x20Use\x20of\x20undefine
+SF:d\x20constant\x20OPTIONS\x20-\x20assumed\x20'OPTIONS'\x20\(this\x20will
+SF:\x20throw\x20an\x20Error\x20in\x20a\x20future\x20version\x20of\x20PHP\)
+SF:\x20in\x20phar://eval\(\)'d\x20code\x20on\x20line\x201\x1b\[39;49m\n")%
+SF:r(RTSPRequest,EE,"\x1b\[34mPsy\x20Shell\x20v0\.9\.9\x20\(PHP\x207\.2\.1
+SF:0\x20\xe2\x80\x94\x20cli\)\x20by\x20Justin\x20Hileman\x1b\[39m\n\x1b\[3
+SF:0;43mPHP\x20Warning:\x20\x20Use\x20of\x20undefined\x20constant\x20OPTIO
+SF:NS\x20-\x20assumed\x20'OPTIONS'\x20\(this\x20will\x20throw\x20an\x20Err
+SF:or\x20in\x20a\x20future\x20version\x20of\x20PHP\)\x20in\x20phar://eval\
+SF:(\)'d\x20code\x20on\x20line\x201\x1b\[39;49m\n")%r(RPCCheck,42,"\x1b\[3
+SF:4mPsy\x20Shell\x20v0\.9\.9\x20\(PHP\x207\.2\.10\x20\xe2\x80\x94\x20cli\
+SF:)\x20by\x20Justin\x20Hileman\x1b\[39m\n")%r(DNSVersionBindReqTCP,42,"\x
+SF:1b\[34mPsy\x20Shell\x20v0\.9\.9\x20\(PHP\x207\.2\.10\x20\xe2\x80\x94\x2
+SF:0cli\)\x20by\x20Justin\x20Hileman\x1b\[39m\n")%r(DNSStatusRequestTCP,42
+SF:,"\x1b\[34mPsy\x20Shell\x20v0\.9\.9\x20\(PHP\x207\.2\.10\x20\xe2\x80\x9
+SF:4\x20cli\)\x20by\x20Justin\x20Hileman\x1b\[39m\n")%r(Help,E8,"\x1b\[34m
+SF:Psy\x20Shell\x20v0\.9\.9\x20\(PHP\x207\.2\.10\x20\xe2\x80\x94\x20cli\)\
+SF:x20by\x20Justin\x20Hileman\x1b\[39m\n\x1b\[30;43mPHP\x20Warning:\x20\x2
+SF:0Use\x20of\x20undefined\x20constant\x20HELP\x20-\x20assumed\x20'HELP'\x
+SF:20\(this\x20will\x20throw\x20an\x20Error\x20in\x20a\x20future\x20versio
+SF:n\x20of\x20PHP\)\x20in\x20phar://eval\(\)'d\x20code\x20on\x20line\x201\
+SF:x1b\[39;49m\n");
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 3.2 - 4.9 (95%), Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (94%), Linux 3.16 (93%), Linux 3.18 (93%), ASUS RT-N56U WAP (Linux 3.4) (93%), Oracle VM Server 3.4.2 (Linux 4.1) (93%), Android 4.1.1 (93%), Adtran 424RG FTTH gateway (92%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: OS: Unix
+
+TRACEROUTE (using port 6200/tcp)
+HOP RTT       ADDRESS
+1   432.17 ms 10.10.16.1
+2   243.23 ms 10.10.10.131
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Apr 28 10:19:41 2019 -- 1 IP address (1 host up) scanned in 204.87 seconds
