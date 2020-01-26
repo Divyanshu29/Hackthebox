@@ -1,0 +1,12 @@
+Codename: ascii_security
+Date : Wed, 5 Jul 2019 07:57:13 UTC
+Architectures: amd64 i386 all
+Components: main
+Suite:
+MD5Sum:
+3baff76a48a865428f2ba696a829d795	690	  Packages
+28697057e6d6b51d5cecb58614541bef	494	  Packages.gz
+SHA256:
+03e48a621e6a1144b06cbdb16db52dfa6e5db52e0881ca1a1a8229827b8fb689	690	  Packages
+aa4d8bd01461fd77c94f2e59da06a47f8a92b29580c4d479604e876d3c44d139	494	  Packages.gz
+

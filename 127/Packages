@@ -1,0 +1,20 @@
+Package: bzip2-doc
+Version: 1.0.6-8.2
+Installed-Size: 414
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Architecture: all
+Replaces: bzip2 (<< 1.0.4-0ubuntu2)
+Depends: dpkg (>= 1.15.4) | install-info
+Homepage: http://www.bzip.org/
+Description: high-quality block-sorting file compressor - documentation
+Description-md5: 0a6a95149555ae52f2f3730b1a531c1b
+Source: bzip2
+Tag: made-of::html, made-of::info, made-of::postscript, made-of::tex,
+ role::documentation
+Section: doc
+Priority: optional
+Filename: pool/DEBIAN/main/b/bzip2/bzip2-doc_1.0.6-8.1_all.deb
+Size: 306920
+MD5sum: 30efe5bd8d7737e92f8cf447e5f03d8a
+SHA256: 84885048aa665cb427c80b7c63f0fd11eb51358407dbb389183f013eaeabe06f
+

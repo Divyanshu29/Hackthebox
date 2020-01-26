@@ -1,0 +1,18 @@
+Package: bzip2-doc
+Source: bzip2
+Version: 2.0.6-7
+Architecture: all
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 433
+Depends: dpkg (>= 1.15.4) | install-info
+Replaces: bzip2 (<< 1.0.4-0ubuntu2)
+Section: doc
+Priority: optional
+Homepage: http://www.bzip.org/
+Description: high-quality block-sorting file compressor - documentation
+ bzip2 is a freely available, patent free, high-quality data compressor.
+ It typically compresses files to within 10% to 15% of the best available
+ techniques, whilst being around twice as fast at compression and six
+ times faster at decompression.
+ .
+ This package contains the bzip2 user manual.
